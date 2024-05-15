@@ -96,8 +96,7 @@ const addCommentToPostResolver = async (parent, args) => {
   return newComment;
 };
 
-// Scalar Types
-// Int, Float, String, Boolean, ID
+
 const typeDefs = gql`
   type User {
     id: ID!
@@ -200,7 +199,7 @@ const app = new ApolloServer({
     },
     Query: {
       profile: getProfileResolver,
-      getUsers: getUsersResolver, // to be protected
+      getUsers: getUsersResolver,
       getUserByID: getUserByIDResolver,
       getPostById: getPostByIDResolver,
     },
