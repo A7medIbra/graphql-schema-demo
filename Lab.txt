@@ -1,0 +1,4 @@
+1. Create operation to get list of posts
+2. Create operation to get post by id named `getPostById`
+3. in `getPostById` operation we should be able to also get the comments on this post
+4. Create operation to add new comment to a specific post
